@@ -83,7 +83,7 @@ git remote -v
 
 ## 4. Pull Request（PR）
 
-完成自己 Fork 內的合併後，向母專案提出跨儲存庫 PR，請維護者審查。
+完成自己 Fork 內的合併後，可依以下步驟向母專案提出跨儲存庫 PR。此次連接工具建立跨儲存庫 PR 時收到 403，尚未成功送出；需由使用者在 GitHub 網頁完成。
 
 在 GitHub 網頁操作時：
 
@@ -111,4 +111,24 @@ git remote -v
 
 ## 實際結果
 
-分支與文件已建立；合併及跨儲存庫 PR 的結果將在完成後補入本節。
+| 項目 | 實際結果與證據 |
+| --- | --- |
+| Fork | 已確認來源為 `se-test-examples/git-examples` |
+| 分支 | 已建立 [developGitBranch](https://github.com/over-over-STEAK/git-examples/tree/developGitBranch) |
+| 文件提交 | [8a643e0](https://github.com/over-over-STEAK/git-examples/commit/8a643e09cfc0572d4f3256b1201271f8444bc973)：新增本文件 |
+| 首頁入口提交 | [152e51a](https://github.com/over-over-STEAK/git-examples/commit/152e51a662e1a3943d4530213a3014ce7ab5360d)：加入 README 連結 |
+| Fork 內的 Pull Request | [PR #1](https://github.com/over-over-STEAK/git-examples/pull/1)，已建立並合併 |
+| 合併提交 | [4af66ae](https://github.com/over-over-STEAK/git-examples/commit/4af66ae7cb8c62fd045a8a3be2b0beb78e0d334d) |
+| 向母專案的 Pull Request | 尚未建立：GitHub 回傳 `403 Resource not accessible by integration` |
+
+此次已完成 Branch、Merge、Fork 與自己儲存庫內的 PR 示範。跨 Fork 向母專案送出 PR 尚待完成，不能將它記成已送出或已合併。
+
+### 完成跨 Fork PR 的最後步驟
+
+在自己的 Fork 頁面點選 **Contribute → Open pull request**，或依第四節從母專案建立。確認 base 是母專案的 `main`、head 是 `over-over-STEAK:main`，再送出。
+
+建議標題：`docs: 新增 over-over-STEAK 的 Git 四項操作實作`
+
+建議說明：新增個人 Git 分支、合併、Fork 與 PR 的中文說明，並於根 README 加入入口。已在自己的 Fork 透過 PR #1 完成分支合併，這次提出修改供母專案維護者審查。
+
+結果補記是在合併後更新自己的 `main`；保留開發分支作為原始提交紀錄。
